@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  transition: background 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DAY THEME */
+body.day {
+  background: linear-gradient(120deg, #60a5fa, #a5b4fc);
+}
+
+/* NIGHT THEME */
+body.night {
+  background: linear-gradient(120deg, #1e1b4b, #312e81);
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  padding: 25px;
+  color: #fff;
+}
+
+/* Header */
+header h1 {
+  margin-bottom: 12px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+}
+
+.search button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #8b5cf6;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #a78bfa;
+}
+
+/* Glass Card */
+.glass {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main img {
+  width: 90px;
+}
+
+#temp {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Forecast */
+.forecast {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+.forecast div {
+  min-width: 90px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.22);
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.forecast img {
+  width: 40px;
+}
+
+/* Text */
+.loading {
+  margin-top: 10px;
+  color: #fde68a;
+}
+
+.error {
+  margin-top: 10px;
+  color: #fca5a5;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.75rem;
+  text-align: center;
+  opacity: 0.7;
+}

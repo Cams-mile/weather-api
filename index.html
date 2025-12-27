@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>City Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="night">
+
+  <div class="app">
+    <header>
+      <h1>🌍 City Weather</h1>
+      <div class="search">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Check</button>
+      </div>
+    </header>
+
+    <!-- Loading -->
+    <p id="loading" class="loading hidden">Loading weather data...</p>
+
+    <!-- Error -->
+    <p id="error" class="error"></p>
+
+    <!-- Current Weather -->
+    <section id="result" class="glass hidden">
+      <div class="main">
+        <div class="info">
+          <h2 id="cityName"></h2>
+          <p id="condition"></p>
+          <p id="temp"></p>
+          <p id="humidity"></p>
+        </div>
+        <img id="icon" alt="Weather icon">
+      </div>
+    </section>
+
+    <!-- Forecast -->
+    <section id="forecast" class="forecast"></section>
+
+    <footer>
+      Powered by OpenWeatherMap API
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
